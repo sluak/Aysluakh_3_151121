@@ -1,0 +1,40 @@
+:root {
+    --blue: #0065FC;
+    --clear-blue: #DEEBFF;
+    --grey: #F2F2F2;
+    --font: 'Raleway', sans-serif;
+    --box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    --grey-star: rgb(235, 233, 233);
+ }
+ 
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* Opera/IE 8+ */
+    -moz-box-sizing: border-box;
+    /* Firefox, autres Gecko */
+    -webkit-box-sizing: border-box;
+    /* Safari/Chrome, autres WebKit */
+ }
+ 
+ 
+ 
+ body {
+    font-family: 'Raleway', sans-serif;
+ }
+ 
+ 
+ img {
+    width: 100%;
+ }
+ 
+ a {
+    text-decoration: none;
+ }
+ 
+ 
+ 
+ /***************** Header with Logo and Navigation ***************/
+ 
+ 
