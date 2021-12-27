@@ -1,20 +1,22 @@
 .header {
+  font-family: "Shrikhand", cursive;
   background: white;
   height: 40px;
   width: 100%;
-  font-weight: bold;
-  font-family: "Shrikhand", cursive;
-  font-size: 20px;
   @include display-center(row);
   position: relative;
+  font-size: 23px;
+  font-weight: bold;
 
-  &__arrow {
+  &__arrow a {
     position: absolute;
+    color: $footer-color;
     left: 15px;
+    top: 8px;
+    font-size: 17px;
   }
 
   &__logo {
-    font-size: 25px;
-    color: black;
+    letter-spacing: 1.1px;
   }
 }

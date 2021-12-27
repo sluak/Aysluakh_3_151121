@@ -5,34 +5,37 @@
   box-shadow: inset 0px 5px 5px 0px #dddddd;
   padding: 10px;
   @include display-center(row);
-  color: $footer-color;
+  color: $title-color;
+  
 }
 
 .city-search input {
   background: none;
   border: none;
-  margin-left: 10px;
+  padding-left: 15px;
   width: 130px;
   font-weight: bold;
+  color: $title-color;
 }
 
 ////*Introduction*/////
 
 .introduction {
-  padding: 30px;
+  padding: 35px;
   text-align: center;
   background-color: $background-color;
 
   h1 {
-    font-size: 25px;
+    font-size: 21px;
     font-weight: bold;
     padding: 10px 30px;
+    letter-spacing: 0.5px;
   }
 
   p {
-    font-size: 17px;
+    font-size: 16px;
     color: $footer-color;
-    margin: 0 10px;
+    font-weight: 300;
   }
 }
 
@@ -41,6 +44,7 @@
 .btn-rest button {
   @include button-gradient;
   margin: 30px 0;
+  padding: 14px 20px;
 }
 
 ////*Fonctionnement*/////
@@ -69,7 +73,7 @@
     box-shadow: 2px 4px 5px rgba(206, 205, 205, 0.667);
     border-radius: 15px;
     padding: 15px;
-    margin: 15px;
+    margin: 10px;
     width: 100%;
     max-width: 300px;
     height: 65px;
@@ -106,13 +110,14 @@
   }
 
   &__icone {
-    padding: 0 20px;
+    padding: 0 25px;
     color: grey;
   }
 
   p {
     font-size: 13px;
-    font-weight: 500;
+    font-weight: 600;
+    letter-spacing: 0.5px;
   }
 }
 
@@ -126,13 +131,11 @@
 .containercard {
   @include desktop {
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px;
   }
 
-  @include tablet {
-    display: flex;
-    justify-content: center;
-  }
 }
 
 h2 {
@@ -144,21 +147,26 @@ h2 {
 .card {
   border-radius: 15px;
   box-shadow: 4px 4px 6px #aaaa;
-  margin: 20px;
+  margin: 20px 0;
   background: #fff;
   position: relative;
+
+  @include desktop {
+    width: calc(25% - 20px);
+  }
+ 
 
   &__newtext {
     position: absolute;
     right: 15px;
-    top: 15px;
+    top: 13px;
     background: $tertiary-color;
     border-radius: 2px;
     text-align: center;
-    color: darken($tertiary-color, 50%);
-    font-size: 13px;
+    color: darken($tertiary-color, 40%);
+    font-size: 12px;
     font-weight: 500;
-    padding: 8px;
+    padding: 5px 8px;
   }
 
   &__image img {
@@ -166,7 +174,9 @@ h2 {
     border-top-right-radius: 15px;
     object-fit: cover;
     max-height: 150px;
+    height: 150px;
     width: 100%;
+    object-position: 50% 80%;
   }
 
   &__content {
@@ -177,11 +187,11 @@ h2 {
 
   h3 {
     font-weight: bold;
-    font-size: 14px;
+    font-size: 15px;
   }
 
   p {
-    font-size: 13px;
+    font-size: 14px;
     color: $footer-color;
     padding: 5px 0;
   }

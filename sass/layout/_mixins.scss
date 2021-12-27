@@ -15,12 +15,13 @@
   background-image: $gradient-color;
   border: 1px solid transparent;
   border-radius: 30px;
-  padding: 15px 40px;
   color: #fff;
   box-shadow: 4px 4px 6px #aaa;
   cursor: pointer;
-  font-size: 16px;
+  font-size: 13px;
+  letter-spacing: 0.5px;
   transition: transform 0.2s;
+  font-weight: bolder;
 
   &:hover {
     background-color: lighten(#9356dc, 10%);
@@ -34,6 +35,8 @@
 
 .far{
   position: absolute;
+  font-size: 20px;
+  color: $footer-color;
 }
 
 &:hover .far {
