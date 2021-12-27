@@ -1,0 +1,199 @@
+////*Search bar*/////
+
+.search {
+  background: #eaeaea;
+  box-shadow: inset 0px 5px 5px 0px #dddddd;
+  padding: 10px;
+  @include display-center(row);
+  color: $footer-color;
+}
+
+.city-search input {
+  background: none;
+  border: none;
+  margin-left: 10px;
+  width: 130px;
+  font-weight: bold;
+}
+
+////*Introduction*/////
+
+.introduction {
+  padding: 30px;
+  text-align: center;
+  background-color: $background-color;
+
+  h1 {
+    font-size: 25px;
+    font-weight: bold;
+    padding: 10px 30px;
+  }
+
+  p {
+    font-size: 17px;
+    color: $footer-color;
+    margin: 0 10px;
+  }
+}
+
+////*Button*/////
+
+.btn-rest button {
+  @include button-gradient;
+  margin: 30px 0;
+}
+
+////*Fonctionnement*/////
+
+.operation {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 40px 20px;
+
+  @include desktop {
+  }
+
+  @include tablet {
+  }
+
+  h2 {
+    width: 100%;
+    font-size: 20px;
+    padding: 10px;
+  }
+
+  &__steps {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    box-shadow: 2px 4px 5px rgba(206, 205, 205, 0.667);
+    border-radius: 15px;
+    padding: 15px;
+    margin: 15px;
+    width: 100%;
+    max-width: 300px;
+    height: 65px;
+    background-color: $background-color;
+
+    &:hover {
+      box-shadow: 2px 4px 5px rgba(185, 185, 185, 0.667);
+      background-color: #9256dc15;
+    }
+
+    &:hover .operation__icone {
+      color: $primary-color;
+    }
+
+    @include desktop {
+      width: 33%;
+    }
+
+    @include tablet {
+      width: 33%;
+    }
+  }
+
+  &__number {
+    @include display-center(row);
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+    background-color: $primary-color;
+    color: white;
+    font-size: 12px;
+    position: relative;
+    margin-left: -25px;
+  }
+
+  &__icone {
+    padding: 0 20px;
+    color: grey;
+  }
+
+  p {
+    font-size: 13px;
+    font-weight: 500;
+  }
+}
+
+////*Cards*/////
+
+.rest-menu {
+  background-color: $background-color;
+  padding: 40px 15px;
+}
+
+.containercard {
+  @include desktop {
+    display: flex;
+    justify-content: center;
+  }
+
+  @include tablet {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+h2 {
+  width: 100%;
+  font-size: 20px;
+  padding-left: 20px;
+}
+
+.card {
+  border-radius: 15px;
+  box-shadow: 4px 4px 6px #aaaa;
+  margin: 20px;
+  background: #fff;
+  position: relative;
+
+  &__newtext {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    background: $tertiary-color;
+    border-radius: 2px;
+    text-align: center;
+    color: darken($tertiary-color, 50%);
+    font-size: 13px;
+    font-weight: 500;
+    padding: 8px;
+  }
+
+  &__image img {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    object-fit: cover;
+    max-height: 150px;
+    width: 100%;
+  }
+
+  &__content {
+    display: flex;
+    width: 100%;
+    padding: 10px 10px;
+  }
+
+  h3 {
+    font-weight: bold;
+    font-size: 14px;
+  }
+
+  p {
+    font-size: 13px;
+    color: $footer-color;
+    padding: 5px 0;
+  }
+
+  &__icone {
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    padding-right: 25px;
+
+    @include heart-icone;
+  }
+}

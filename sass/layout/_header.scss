@@ -1,0 +1,20 @@
+.header {
+  background: white;
+  height: 40px;
+  width: 100%;
+  font-weight: bold;
+  font-family: "Shrikhand", cursive;
+  font-size: 20px;
+  @include display-center(row);
+  position: relative;
+
+  &__arrow {
+    position: absolute;
+    left: 15px;
+  }
+
+  &__logo {
+    font-size: 25px;
+    color: black;
+  }
+}

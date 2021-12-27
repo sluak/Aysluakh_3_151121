@@ -1,0 +1,67 @@
+@mixin display-center($direction:row) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: $direction;
+}
+
+@mixin display-space {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@mixin button-gradient {
+  background-image: $gradient-color;
+  border: 1px solid transparent;
+  border-radius: 30px;
+  padding: 15px 40px;
+  color: #fff;
+  box-shadow: 4px 4px 6px #aaa;
+  cursor: pointer;
+  font-size: 16px;
+  transition: transform 0.2s;
+
+  &:hover {
+    background-color: lighten(#9356dc, 10%);
+    background-blend-mode: lighten;
+    box-shadow: 4px 4px 6px rgb(174, 171, 171);
+    transform: scale(1.02);
+  }
+}
+
+@mixin heart-icone {
+
+.far{
+  position: absolute;
+}
+
+&:hover .far {
+  opacity: 0;
+}
+
+.fas {
+  position: absolute;
+  color: transparent;
+  background-image: $gradient-color;
+  background-clip: text;
+  -webkit-background-clip: text;
+  opacity: 0;
+  transition: all 200ms ease-in-out;
+}
+
+&:hover .fas {
+  opacity: 1;
+}
+}
+
+@mixin tablet {
+  @media screen and (min-width: map-get($breakpoints, tablet)) {
+    @content;
+  }
+}
+@mixin desktop {
+  @media screen and (min-width: map-get($breakpoints, desktop)) {
+    @content;
+  }
+}

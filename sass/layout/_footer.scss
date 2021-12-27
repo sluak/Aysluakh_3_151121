@@ -1,0 +1,27 @@
+.footer {
+  background-color: $footer-color;
+  color: white;
+  padding: 15px;
+ 
+
+  &__logo {
+    font-size: 20px;
+    font-family: "Shrikhand", cursive;
+  }
+  ul {
+    padding: 5px 5px;
+    li {
+      padding: 0 5px 5px 0;
+      a {
+        color: white;
+        font-size: 13px;
+      }
+    }
+  }
+  .fa-hands-helping {
+    margin-right: 10px;
+  }
+  .fa-utensils {
+    margin-right: 15px;
+  }
+}

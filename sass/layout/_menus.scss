@@ -1,0 +1,193 @@
+////*Top image*/////
+
+.restaurant {
+  img {
+    object-fit: cover;
+    width: 100%;
+    height: 250px;
+  }
+
+  ////*Title Restaurants*/////
+
+  &__title {
+    @include display-space;
+    background-color: #f6f6f6;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    width: 100%;
+    position: relative;
+    margin-top: -50px;
+  }
+
+  &__name {
+    font-size: 14px;
+    font-family: $font-logo;
+    padding: 20px 20px 10px 20px;
+  }
+
+  ////*heart icone*/////
+
+  &__icone {
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    padding-right: 45px;
+    position: relative;
+    cursor: pointer;
+    @include heart-icone;
+  }
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: #f6f6f6;
+  padding: 30px 0;
+}
+
+.sub-menu {
+  width: 100%;
+
+  @include desktop {
+    width: 33%;
+  }
+
+  @include tablet {
+    width: 33%;
+  }
+
+  ////*Title with line*/////
+
+  &__title {
+    ::after {
+      background: $tertiary-color;
+      content: " ";
+      display: block;
+      height: 3px;
+      margin-top: 5px;
+      width: 40px;
+    }
+
+    h2 {
+      font-size: 15px;
+      font-weight: 300;
+      padding: 20px 0 0 20px;
+    }
+  }
+}
+
+////*Each menu meal*/////
+
+.meal {
+  display: flex;
+  align-items: center;
+  box-shadow: 3px 5px 5px 0px #dddddd;
+  border-radius: 15px;
+  margin: 15px;
+  background-color: white;
+  width: 100%;
+  max-width: 340px;
+  height: 70px;
+  overflow: hidden;
+
+  &__discription {
+    padding: 15px;
+
+    h3 {
+      font-size: 15px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 1;
+      -webkit-box-orient: vertical;
+      word-break: break-word;
+    }
+
+    p {
+      font-size: 13px;
+      color: $footer-color;
+      margin-top: 5px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 1;
+      -webkit-box-orient: vertical;
+      word-break: break-word;
+    }
+  }
+
+  &__price {
+    font-size: 13px;
+    padding: 20px 40px 0 0;
+    color: $footer-color;
+    margin-left: auto;
+  }
+
+  ////*Green check*/////
+
+  &__check {
+    @include display-center;
+    margin-right: -85px;
+    width: 70px;
+    height: 100%;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    font-size: 20px;
+    background-color: $tertiary-color;
+    transition: 0.5s ease-in-out;
+    color: white;
+  }
+
+  &:hover &__check {
+    margin-right: 0;
+  }
+
+
+}
+
+
+////*Animation menu appears*/////
+
+.meal:nth-child(2) {
+  animation: animation-menus 0.4s linear both;
+  animation-delay: 0;
+}
+.meal:nth-child(3) {
+  animation: animation-menus 0.4s linear both;
+  animation-delay: 0.4s;
+}
+.meal:nth-child(4) {
+  animation: animation-menus 0.4s linear both;
+  animation-delay: 0.8s;
+}
+
+@keyframes animation-menus {
+  0% {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  50% {
+    transform: translateY(7px);
+    animation-delay: 10ms;
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+////*Button Order*/////
+
+.btn-order {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 40px 0;
+}
+
+.btn-order button {
+  @include button-gradient;
+}
