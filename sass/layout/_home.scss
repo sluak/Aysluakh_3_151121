@@ -6,7 +6,6 @@
   padding: 10px;
   @include display-center(row);
   color: $title-color;
-  
 }
 
 .city-search input {
@@ -63,7 +62,7 @@
   h2 {
     width: 100%;
     font-size: 20px;
-    padding: 10px;
+    padding: 10px 0;
   }
 
   &__steps {
@@ -126,6 +125,12 @@
 .rest-menu {
   background-color: $background-color;
   padding: 40px 15px;
+
+  h2 {
+    width: 100%;
+    font-size: 20px;
+    padding: 10px 0;
+  }
 }
 
 .containercard {
@@ -135,13 +140,6 @@
     justify-content: space-between;
     margin: 20px;
   }
-
-}
-
-h2 {
-  width: 100%;
-  font-size: 20px;
-  padding-left: 20px;
 }
 
 .card {
@@ -152,9 +150,8 @@ h2 {
   position: relative;
 
   @include desktop {
-    width: calc(25% - 20px);
+  width: calc(25% - 20px);
   }
- 
 
   &__newtext {
     position: absolute;
@@ -173,10 +170,9 @@ h2 {
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
     object-fit: cover;
-    max-height: 150px;
-    height: 150px;
+    height: 180px;
     width: 100%;
-    object-position: 50% 80%;
+    object-position: 100% 100%;
   }
 
   &__content {

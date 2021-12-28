@@ -111,7 +111,7 @@ li {
 .btn-rest button {
   background-image: -webkit-gradient(linear, left bottom, left top, color-stop(5%, #9356dc), color-stop(#b35cdc), color-stop(#cf64dc), color-stop(#e86edb), to(#ff79da));
   background-image: linear-gradient(to top, #9356dc 5%, #b35cdc, #cf64dc, #e86edb, #ff79da);
-  border: 1px solid transparent;
+  border: none;
   border-radius: 30px;
   color: #fff;
   -webkit-box-shadow: 4px 4px 6px #aaa;
@@ -149,7 +149,7 @@ li {
 .operation h2 {
   width: 100%;
   font-size: 20px;
-  padding: 10px;
+  padding: 10px 0;
 }
 
 .operation__steps {
@@ -182,13 +182,13 @@ li {
   color: #9356dc;
 }
 
-@media screen and (min-width: 1280px) {
+@media (min-width: 768px) {
   .operation__steps {
     width: 33%;
   }
 }
 
-@media screen and (min-width: 768px) {
+@media (min-width: 480px) and (max-width: 768px) {
   .operation__steps {
     width: 33%;
   }
@@ -234,7 +234,13 @@ li {
   padding: 40px 15px;
 }
 
-@media screen and (min-width: 1280px) {
+.rest-menu h2 {
+  width: 100%;
+  font-size: 20px;
+  padding: 10px 0;
+}
+
+@media (min-width: 768px) {
   .containercard {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -248,12 +254,6 @@ li {
   }
 }
 
-h2 {
-  width: 100%;
-  font-size: 20px;
-  padding-left: 20px;
-}
-
 .card {
   border-radius: 15px;
   -webkit-box-shadow: 4px 4px 6px #aaaa;
@@ -263,7 +263,7 @@ h2 {
   position: relative;
 }
 
-@media screen and (min-width: 1280px) {
+@media (min-width: 768px) {
   .card {
     width: calc(25% - 20px);
   }
@@ -287,11 +287,10 @@ h2 {
   border-top-right-radius: 15px;
   -o-object-fit: cover;
      object-fit: cover;
-  max-height: 150px;
-  height: 150px;
+  height: 180px;
   width: 100%;
-  -o-object-position: 50% 80%;
-     object-position: 50% 80%;
+  -o-object-position: 100% 100%;
+     object-position: 100% 100%;
 }
 
 .card__content {
@@ -337,6 +336,7 @@ h2 {
 }
 
 .card__icone .fas {
+  font-size: 20px;
   position: absolute;
   color: transparent;
   background-image: -webkit-gradient(linear, left bottom, left top, color-stop(5%, #9356dc), color-stop(#b35cdc), color-stop(#cf64dc), color-stop(#e86edb), to(#ff79da));
@@ -412,6 +412,7 @@ h2 {
 }
 
 .restaurant__icone .fas {
+  font-size: 20px;
   position: absolute;
   color: transparent;
   background-image: -webkit-gradient(linear, left bottom, left top, color-stop(5%, #9356dc), color-stop(#b35cdc), color-stop(#cf64dc), color-stop(#e86edb), to(#ff79da));
@@ -431,9 +432,9 @@ h2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   background-color: #f6f6f6;
@@ -442,17 +443,12 @@ h2 {
 
 .sub-menu {
   width: 100%;
+  padding: 0 15px;
 }
 
-@media screen and (min-width: 1280px) {
+@media (min-width: 768px) {
   .sub-menu {
-    width: 33%;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .sub-menu {
-    width: 33%;
+    width: calc(33.33% - 20px);
   }
 }
 
@@ -468,7 +464,7 @@ h2 {
 .sub-menu__title h2 {
   font-size: 14px;
   font-weight: 300;
-  padding: 20px 0 0 20px;
+  padding-top: 20px;
 }
 
 .meal {
@@ -481,12 +477,11 @@ h2 {
   -webkit-box-shadow: 3px 5px 5px 0px #dddddd;
           box-shadow: 3px 5px 5px 0px #dddddd;
   border-radius: 15px;
-  margin: 15px;
+  margin: 15px 0;
   background-color: white;
   width: 100%;
-  max-width: 340px;
-  height: 60px;
   overflow: hidden;
+  height: 60px;
 }
 
 .meal__discription {
@@ -654,7 +649,7 @@ h2 {
 .btn-order button {
   background-image: -webkit-gradient(linear, left bottom, left top, color-stop(5%, #9356dc), color-stop(#b35cdc), color-stop(#cf64dc), color-stop(#e86edb), to(#ff79da));
   background-image: linear-gradient(to top, #9356dc 5%, #b35cdc, #cf64dc, #e86edb, #ff79da);
-  border: 1px solid transparent;
+  border: none;
   border-radius: 30px;
   color: #fff;
   -webkit-box-shadow: 4px 4px 6px #aaa;
@@ -667,7 +662,7 @@ h2 {
   transition: transform 0.2s;
   transition: transform 0.2s, -webkit-transform 0.2s;
   font-weight: bolder;
-  padding: 15px 50px;
+  padding: 15px 40px;
 }
 
 .btn-order button:hover {

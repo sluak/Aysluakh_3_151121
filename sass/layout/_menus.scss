@@ -46,7 +46,7 @@
 
 .menu {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   flex-wrap: wrap;
   background-color: #f6f6f6;
   padding: 15px 0;
@@ -54,14 +54,12 @@
 
 .sub-menu {
   width: 100%;
+  padding: 0 15px;
 
   @include desktop {
-    width: 33%;
+    width: calc(33.33% - 20px);
   }
 
-  @include tablet {
-    width: 33%;
-  }
 
   ////*Title with line*/////
 
@@ -78,7 +76,7 @@
     h2 {
       font-size: 14px;
       font-weight: 300;
-      padding: 20px 0 0 20px;
+      padding-top: 20px;
     }
   }
 }
@@ -90,12 +88,12 @@
   align-items: center;
   box-shadow: 3px 5px 5px 0px #dddddd;
   border-radius: 15px;
-  margin: 15px;
+  margin: 15px 0;
   background-color: white;
   width: 100%;
-  max-width: 340px;
-  height: 60px;
   overflow: hidden;
+  height: 60px;
+  
 
   &__discription {
     padding: 15px;
@@ -213,5 +211,5 @@
 
 .btn-order button {
   @include button-gradient;
-  padding: 15px 50px;
+  padding: 15px 40px;
 }

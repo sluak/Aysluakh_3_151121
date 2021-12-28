@@ -13,7 +13,7 @@
 
 @mixin button-gradient {
   background-image: $gradient-color;
-  border: 1px solid transparent;
+  border: none;
   border-radius: 30px;
   color: #fff;
   box-shadow: 4px 4px 6px #aaa;
@@ -44,6 +44,7 @@
 }
 
 .fas {
+  font-size: 20px;
   position: absolute;
   color: transparent;
   background-image: $gradient-color;
@@ -58,13 +59,15 @@
 }
 }
 
+
 @mixin tablet {
-  @media screen and (min-width: map-get($breakpoints, tablet)) {
+  @media (min-width: map-get($breakpoints, phone)) and (max-width: map-get($breakpoints, tablet)) {
     @content;
   }
 }
+
 @mixin desktop {
-  @media screen and (min-width: map-get($breakpoints, desktop)) {
+  @media (min-width: map-get($breakpoints, tablet)) {
     @content;
   }
 }
