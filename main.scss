@@ -1,19 +1,20 @@
-@import "sass/layout/_mixins.scss";
-@import "sass/layout/_variables.scss";
+  ////*Utils*/////
 
+@import "sass/utils/_mixins.scss";
+@import "sass/utils/_variables.scss";
 
+  ////*Base*/////
 
 @import "sass/base/_reset.scss";
 
-
-
+  ////*Main Layout*/////
 
 @import "sass/layout/_header.scss";
-@import "sass/layout/_home.scss";
-@import "sass/layout/_menus.scss";
 @import "sass/layout/_footer.scss";
 @import "sass/layout/_loader.scss";
 
 
+  ////*Pages format*/////
 
-
+  @import "sass/pages/_home.scss";
+  @import "sass/pages/_menus.scss";

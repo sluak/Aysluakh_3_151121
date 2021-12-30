@@ -2,12 +2,27 @@
   background-color: $footer-color;
   color: white;
   padding: 15px;
- 
+
+
+  @include desktop {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 
   &__logo {
-    font-size: 20px;
+    font-size: 17px;
     font-family: "Shrikhand", cursive;
+    padding: 10px 0;
+
+    @include desktop {
+   padding-right: 50px;
+    }
+
   }
+
+
+
   ul {
     padding: 5px 5px;
     li {
@@ -18,10 +33,15 @@
       }
     }
   }
-  .fa-hands-helping {
-    margin-right: 10px;
-  }
+
   .fa-utensils {
-    margin-right: 15px;
+    margin-right: 10px;
+    font-size: 13px;
+  }
+
+  .fa-hands-helping {
+    margin-right: 7px;
+    font-size: 11px;
+    
   }
 }

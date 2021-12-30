@@ -43,7 +43,7 @@
 .btn-rest button {
   @include button-gradient;
   margin: 30px 0;
-  padding: 14px 20px;
+  padding: 16px 20px;
 }
 
 ////*Fonctionnement*/////
@@ -194,12 +194,11 @@
 
   &__icone {
     position: relative;
-    cursor: pointer;
     display: flex;
     align-items: center;
     margin-left: auto;
-    padding-right: 25px;
-
+    padding: 0 35px 20px 0;
+    cursor: pointer;
     @include heart-icone;
   }
 }

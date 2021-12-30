@@ -10,13 +10,13 @@
 
   &__arrow a {
     position: absolute;
-    color: $footer-color;
-    left: 15px;
+    color: $icone-color;
+    left: 20px;
     top: 8px;
     font-size: 17px;
   }
 
   &__logo {
-    letter-spacing: 1.1px;
+    font-weight: normal;
   }
 }
