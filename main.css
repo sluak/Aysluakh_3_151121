@@ -44,7 +44,6 @@ li {
           flex-direction: row;
   position: relative;
   font-size: 23px;
-  font-weight: bold;
 }
 
 .header__arrow a {
@@ -315,15 +314,9 @@ li {
   color: #9356dc;
 }
 
-@media (min-width: 768px) {
-  .operation__steps {
-    width: 33%;
-  }
-}
-
 @media (min-width: 480px) and (max-width: 768px) {
   .operation__steps {
-    width: 33%;
+    width: calc(50% - 20px);
   }
 }
 
@@ -359,7 +352,6 @@ li {
 .operation p {
   font-size: 13px;
   font-weight: 600;
-  letter-spacing: 0.5px;
 }
 
 .rest-menu {
@@ -420,10 +412,10 @@ li {
   border-top-right-radius: 15px;
   -o-object-fit: cover;
      object-fit: cover;
-  height: 180px;
+  height: 175px;
   width: 100%;
-  -o-object-position: 100% 100%;
-     object-position: 100% 100%;
+  -o-object-position: bottom;
+     object-position: bottom;
 }
 
 .card__content {

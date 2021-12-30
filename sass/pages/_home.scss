@@ -53,11 +53,6 @@
   flex-wrap: wrap;
   margin: 40px 20px;
 
-  @include desktop {
-  }
-
-  @include tablet {
-  }
 
   h2 {
     width: 100%;
@@ -87,13 +82,9 @@
       color: $primary-color;
     }
 
-    @include desktop {
-      width: 33%;
-    }
-
-    @include tablet {
-      width: 33%;
-    }
+      @include tablet {
+        width: calc(50% - 20px);
+        }
   }
 
   &__number {
@@ -116,7 +107,6 @@
   p {
     font-size: 13px;
     font-weight: 600;
-    letter-spacing: 0.5px;
   }
 }
 
@@ -170,9 +160,9 @@
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
     object-fit: cover;
-    height: 180px;
+    height: 175px;
     width: 100%;
-    object-position: 100% 100%;
+    object-position: bottom;
   }
 
   &__content {
