@@ -96,6 +96,7 @@
 
   &__discription {
     padding: 15px;
+    width: calc(100% - 110px); ////*110px because price + check*/////
 
     h3 {
       font-size: 15px;
@@ -125,13 +126,15 @@
     padding: 20px 40px 0 0;
     color: $footer-color;
     margin-left: auto;
+    width: 40px;
+    text-align: right;
   }
 
   ////*Green check*/////
 
   &__check {
     @include display-center;
-    margin-right: -85px;
+    margin-right: -70px;
     width: 70px;
     height: 100%;
     border-top-right-radius: 15px;

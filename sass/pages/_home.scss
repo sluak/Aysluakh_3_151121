@@ -11,7 +11,8 @@
 .city-search input {
   background: none;
   border: none;
-  padding-left: 15px;
+  margin-left: 10px;
+  padding-left: 10px;
   width: 130px;
   font-weight: bold;
   color: $title-color;
@@ -114,7 +115,7 @@
 
 .rest-menu {
   background-color: $background-color;
-  padding: 40px 15px;
+  padding: 40px 20px;
 
   h2 {
     width: 100%;

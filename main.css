@@ -215,7 +215,8 @@ li {
 .city-search input {
   background: none;
   border: none;
-  padding-left: 15px;
+  margin-left: 10px;
+  padding-left: 10px;
   width: 130px;
   font-weight: bold;
   color: #363535;
@@ -356,7 +357,7 @@ li {
 
 .rest-menu {
   background-color: #f7f7f7;
-  padding: 40px 15px;
+  padding: 40px 20px;
 }
 
 .rest-menu h2 {
@@ -452,7 +453,7 @@ li {
 
 .card__icone .far {
   position: absolute;
-  font-size: 22px;
+  font-size: 20px;
   color: #636161;
 }
 
@@ -461,7 +462,7 @@ li {
 }
 
 .card__icone .fas {
-  font-size: 22px;
+  font-size: 20px;
   position: absolute;
   color: transparent;
   background-image: -webkit-gradient(linear, left bottom, left top, color-stop(5%, #9356dc), color-stop(#b35cdc), color-stop(#cf64dc), color-stop(#e86edb), to(#ff79da));
@@ -528,7 +529,7 @@ li {
 
 .restaurant__icone .far {
   position: absolute;
-  font-size: 22px;
+  font-size: 20px;
   color: #636161;
 }
 
@@ -537,7 +538,7 @@ li {
 }
 
 .restaurant__icone .fas {
-  font-size: 22px;
+  font-size: 20px;
   position: absolute;
   color: transparent;
   background-image: -webkit-gradient(linear, left bottom, left top, color-stop(5%, #9356dc), color-stop(#b35cdc), color-stop(#cf64dc), color-stop(#e86edb), to(#ff79da));
@@ -611,6 +612,7 @@ li {
 
 .meal__discription {
   padding: 15px;
+  width: calc(100% - 110px);
 }
 
 .meal__discription h3 {
@@ -640,6 +642,8 @@ li {
   padding: 20px 40px 0 0;
   color: #353535;
   margin-left: auto;
+  width: 40px;
+  text-align: right;
 }
 
 .meal__check {
@@ -656,7 +660,7 @@ li {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  margin-right: -85px;
+  margin-right: -70px;
   width: 70px;
   height: 100%;
   border-top-right-radius: 15px;
