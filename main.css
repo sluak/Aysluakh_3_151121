@@ -314,7 +314,7 @@ li {
   color: #9356dc;
 }
 
-@media (min-width: 480px) and (max-width: 768px) {
+@media (min-width: 599px) and (max-width: 768px) {
   .operation__steps {
     width: calc(50% - 20px);
   }
