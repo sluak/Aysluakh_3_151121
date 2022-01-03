@@ -95,8 +95,8 @@
   
 
   &__discription {
-    padding: 15px;
-    width: calc(100% - 110px); ////*110px because price + check*/////
+    padding: 10px;
+    width: calc(100% - 50px); ////*100px because price + check*/////
 
     h3 {
       font-size: 15px;
@@ -123,7 +123,7 @@
 
   &__price {
     font-size: 13px;
-    padding: 20px 40px 0 0;
+    padding: 20px 40px 0 20px;
     color: $footer-color;
     margin-left: auto;
     width: 40px;
